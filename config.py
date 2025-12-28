@@ -32,7 +32,8 @@ def get_args():
     # 2. Decoding Policy
     parser.add_argument('--decode_strategy', type=str, default='greedy', choices=['greedy', 'beam'],
                         help='Decoding strategy for testing')
-    parser.add_argument('--beam_width', type=int, default=3, help='Beam width for beam search')
+    parser.add_argument('--beam_width', type=int, default=5, help='Beam width for beam search')
+    parser.add_argument("--length_penalty", type=float, default=0.6)
 
     # 3. Training Policy (Teacher Forcing vs Free Running)
     parser.add_argument('--tf_mode', type=str, default='mixed', choices=['force', 'free', 'mixed'],
