@@ -26,7 +26,7 @@ def get_args():
 
     # --- RNN Specific Requirements ---
     # 1. Attention Mechanism Variations
-    parser.add_argument('--rnn_attn_type', type=str, default='dot', choices=['dot', 'general', 'concat'],
+    parser.add_argument('--rnn_attn_type', type=str, default='concat', choices=['dot', 'general', 'concat'],
                         help='Attention mechanism: dot (Dot-product), general (Multiplicative), concat (Additive)')
     
     # 2. Decoding Policy
@@ -49,7 +49,7 @@ def get_args():
     
     # Transformer specific args...
     parser.add_argument('--n_heads', type=int, default=8)
-    parser.add_argument('--pf_dim', type=int, default=512)
+    parser.add_argument('--pf_dim', type=int, default=2048)
     parser.add_argument('--pos_type', type=str, default='absolute', choices=['absolute', 'alibi'], help='absolute pos enc vs relative ALiBi bias')
     parser.add_argument('--norm_type', type=str, default='layernorm', choices=['layernorm', 'rmsnorm'], help='layernorm vs rmsnorm')
 

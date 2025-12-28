@@ -15,18 +15,10 @@ from models.transformer import Encoder as TransEncoder, Decoder as TransDecoder,
 # 0) Predefined model paths (YOU EDIT THESE ONCE)
 # ============================================================
 MODEL_PATHS = {
-    "gru": "ckpts/gru",
-    "transformer": "/data/250010101/NLP/machine_translate/ckpts/transformer/absolute/rmsnorm/best_model.pt",
+    "gru": "ckpts/gru/force/concat/best_model.pt",
+    "transformer": "ckpts/transformer/absolute/rmsnorm/best_model.pt",
     "t5": "ckpts/t5_best",   # directory OR huggingface model name
 }
-
-# 也可以写成你当前 ckpt_dir 拼接逻辑：
-# MODEL_PATHS = {
-#     "gru": os.path.join("logs", "gru", "force", "dot", "best_model.pt"),
-#     "transformer": os.path.join("logs", "transformer", "layers_4", "alibi", "rmsnorm", "best_model.pt"),
-#     "t5": "google/mt5-small",
-# }
-
 
 # ============================================================
 # 1) Transformer Inference Wrapper
@@ -117,8 +109,8 @@ def load_model(args, model_name, device, src_processor=None, tgt_processor=None,
     # -------- GRU --------
     if model_name == "gru":
         attn = Attention(args.hid_dim, args.hid_dim, method=args.rnn_attn_type)
-        enc = GRUEncoder(input_dim, args.emb_dim, args.hid_dim, args.hid_dim, args.dropout, args.n_layers)
-        dec = GRUDecoder(output_dim, args.emb_dim, args.hid_dim, args.hid_dim, args.dropout, attn, args.n_layers)
+        enc = GRUEncoder(input_dim, args.emb_dim, args.hid_dim, args.hid_dim, 0.5, n_layers=2)
+        dec = GRUDecoder(output_dim, args.emb_dim, args.hid_dim, args.hid_dim, 0.5, attn, n_layers=2)
         model = GRUSeq2Seq(enc, dec, device).to(device)
 
         if not os.path.exists(ckpt_path):
