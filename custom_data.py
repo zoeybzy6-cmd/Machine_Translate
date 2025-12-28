@@ -1,7 +1,5 @@
 import torch
 import json
-import jieba
-import re
 from collections import Counter
 from torch.utils.data import Dataset, DataLoader
 from torch.nn.utils.rnn import pad_sequence

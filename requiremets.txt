@@ -1,0 +1,9 @@
+torch
+numpy
+spacy
+datasets
+nltk
+tqdm
+matplotlib
+evaluate
+sentencepiece
