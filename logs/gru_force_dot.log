@@ -1,0 +1,142 @@
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Training Mode: TEACHER FORCING (Ratio = 1.0)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing GRU model...
+Config: Emb=512, Hid=512, Layers=2
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing GRU model with Pre-trained Embeddings...
+RNN Settings: Layers=2, Attention=dot
+Starting Training GRU...
+Trainable parameters: 48.07M
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/dot/best_model.pt
+Epoch: 01 | Time: 3m 18s
+	Train Loss: 6.365 | PPL: 581.351
+	 Val. Loss: 9.485 | PPL: 13163.549
+	 Val BLEU: 0.17
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/dot/best_model.pt
+Epoch: 02 | Time: 3m 19s
+	Train Loss: 5.545 | PPL: 255.934
+	 Val. Loss: 9.306 | PPL: 11006.308
+	 Val BLEU: 0.19
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/dot/best_model.pt
+Epoch: 03 | Time: 3m 18s
+	Train Loss: 5.113 | PPL: 166.184
+	 Val. Loss: 9.266 | PPL: 10572.794
+	 Val BLEU: 0.31
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/dot/best_model.pt
+Epoch: 04 | Time: 3m 18s
+	Train Loss: 4.812 | PPL: 123.004
+	 Val. Loss: 9.178 | PPL: 9681.366
+	 Val BLEU: 0.50
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/dot/best_model.pt
+Epoch: 05 | Time: 3m 20s
+	Train Loss: 4.597 | PPL:  99.143
+	 Val. Loss: 9.153 | PPL: 9438.653
+	 Val BLEU: 0.46
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/dot/best_model.pt
+Epoch: 06 | Time: 3m 20s
+	Train Loss: 4.433 | PPL:  84.147
+	 Val. Loss: 9.124 | PPL: 9171.996
+	 Val BLEU: 0.48
+
+special token IDs: {1, 2, 3}
+Epoch: 07 | Time: 3m 19s
+	Train Loss: 4.299 | PPL:  73.646
+	 Val. Loss: 9.170 | PPL: 9605.860
+	 Val BLEU: 0.72
+
+special token IDs: {1, 2, 3}
+Epoch: 08 | Time: 3m 22s
+	Train Loss: 4.188 | PPL:  65.902
+	 Val. Loss: 9.165 | PPL: 9560.800
+	 Val BLEU: 0.86
+
+special token IDs: {1, 2, 3}
+Epoch: 09 | Time: 3m 19s
+	Train Loss: 4.094 | PPL:  59.992
+	 Val. Loss: 9.201 | PPL: 9909.698
+	 Val BLEU: 0.75
+
+special token IDs: {1, 2, 3}
+Epoch: 10 | Time: 3m 18s
+	Train Loss: 4.012 | PPL:  55.257
+	 Val. Loss: 9.201 | PPL: 9905.484
+	 Val BLEU: 0.75
+
+special token IDs: {1, 2, 3}
+Epoch: 11 | Time: 3m 17s
+	Train Loss: 3.940 | PPL:  51.413
+	 Val. Loss: 9.253 | PPL: 10439.375
+	 Val BLEU: 0.88
+
+special token IDs: {1, 2, 3}
+Epoch: 12 | Time: 3m 17s
+	Train Loss: 3.876 | PPL:  48.232
+	 Val. Loss: 9.301 | PPL: 10949.935
+	 Val BLEU: 0.85
+
+special token IDs: {1, 2, 3}
+Epoch: 13 | Time: 3m 16s
+	Train Loss: 3.819 | PPL:  45.537
+	 Val. Loss: 9.296 | PPL: 10891.778
+	 Val BLEU: 0.85
+
+special token IDs: {1, 2, 3}
+Epoch: 14 | Time: 3m 17s
+	Train Loss: 3.768 | PPL:  43.289
+	 Val. Loss: 9.291 | PPL: 10839.291
+	 Val BLEU: 0.87
+
+special token IDs: {1, 2, 3}
+Epoch: 15 | Time: 3m 18s
+	Train Loss: 3.721 | PPL:  41.307
+	 Val. Loss: 9.327 | PPL: 11232.276
+	 Val BLEU: 0.75
+
+Loading best model for testing from ckpts/gru/force/dot/best_model.pt ...
+| Test Loss: 9.511 | Test PPL: 13511.588 |
+Evaluating BLEU with strategy: GREEDY
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The Nobel laureate Ecausible report, which has been proposed, is not to be implemented.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: The “That” of the “Bigan” is the first step in the right: the BJP, the Supreme Court, and the Supreme Court, which has not been arrested.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “We have been able to go back,” he says.
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: Clinton has been “unstable, the US, and the state of the law.”
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But even though the political system is being eroded.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 0.55

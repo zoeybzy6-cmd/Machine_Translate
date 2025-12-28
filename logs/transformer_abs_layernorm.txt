@@ -1,0 +1,142 @@
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Model: TRANSFORMER (Teacher Forcing Mode is irrelevant/automatic)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing TRANSFORMER model...
+Config: Emb=512, Hid=512, Layers=3
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing TRANSFORMER model with Pre-trained Embeddings...
+Starting Training TRANSFORMER...
+Trainable parameters: 46.66M
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 01 | Time: 1m 3s
+	Train Loss: 7.229 | PPL: 1379.401
+	 Val. Loss: 6.678 | PPL: 794.458
+	 Val BLEU: 0.08
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 02 | Time: 1m 5s
+	Train Loss: 5.690 | PPL: 295.907
+	 Val. Loss: 5.970 | PPL: 391.513
+	 Val BLEU: 0.60
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 03 | Time: 1m 5s
+	Train Loss: 4.858 | PPL: 128.768
+	 Val. Loss: 5.397 | PPL: 220.810
+	 Val BLEU: 2.42
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 04 | Time: 1m 2s
+	Train Loss: 4.219 | PPL:  67.987
+	 Val. Loss: 5.051 | PPL: 156.242
+	 Val BLEU: 2.43
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 05 | Time: 0m 58s
+	Train Loss: 3.822 | PPL:  45.675
+	 Val. Loss: 4.908 | PPL: 135.343
+	 Val BLEU: 4.14
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 06 | Time: 0m 57s
+	Train Loss: 3.561 | PPL:  35.197
+	 Val. Loss: 4.809 | PPL: 122.548
+	 Val BLEU: 4.15
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 07 | Time: 0m 58s
+	Train Loss: 3.366 | PPL:  28.977
+	 Val. Loss: 4.748 | PPL: 115.394
+	 Val BLEU: 3.92
+
+special token IDs: {1, 2, 3}
+Epoch: 08 | Time: 0m 57s
+	Train Loss: 3.214 | PPL:  24.881
+	 Val. Loss: 4.756 | PPL: 116.238
+	 Val BLEU: 4.76
+
+special token IDs: {1, 2, 3}
+Epoch: 09 | Time: 1m 0s
+	Train Loss: 3.087 | PPL:  21.918
+	 Val. Loss: 4.767 | PPL: 117.512
+	 Val BLEU: 3.03
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/layernorm/best_model.pt
+Epoch: 10 | Time: 0m 57s
+	Train Loss: 2.980 | PPL:  19.684
+	 Val. Loss: 4.727 | PPL: 112.926
+	 Val BLEU: 4.75
+
+special token IDs: {1, 2, 3}
+Epoch: 11 | Time: 0m 57s
+	Train Loss: 2.886 | PPL:  17.913
+	 Val. Loss: 4.764 | PPL: 117.182
+	 Val BLEU: 4.46
+
+special token IDs: {1, 2, 3}
+Epoch: 12 | Time: 0m 57s
+	Train Loss: 2.803 | PPL:  16.496
+	 Val. Loss: 4.772 | PPL: 118.179
+	 Val BLEU: 4.70
+
+special token IDs: {1, 2, 3}
+Epoch: 13 | Time: 0m 57s
+	Train Loss: 2.730 | PPL:  15.334
+	 Val. Loss: 4.781 | PPL: 119.267
+	 Val BLEU: 4.44
+
+special token IDs: {1, 2, 3}
+Epoch: 14 | Time: 0m 57s
+	Train Loss: 2.663 | PPL:  14.341
+	 Val. Loss: 4.811 | PPL: 122.818
+	 Val BLEU: 4.38
+
+special token IDs: {1, 2, 3}
+Epoch: 15 | Time: 0m 57s
+	Train Loss: 2.603 | PPL:  13.507
+	 Val. Loss: 4.864 | PPL: 129.564
+	 Val BLEU: 4.49
+
+Loading best model for testing from ckpts/transformer/absolute/layernorm/best_model.pt ...
+| Test Loss: 5.380 | Test PPL: 216.935 |
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The IPCC’s record shows that whether this activity violates the bill.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: One question, “We asked,” is whether this violates the HKahoo Act, and told that it was not violated.”
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “It’s a lot of grotesquely,” the deputy governor of the deputy governor is back.
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The White House will define this “creation” as official activity, so it is not subject to the Hodel Act.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But even official activities are political.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 4.65

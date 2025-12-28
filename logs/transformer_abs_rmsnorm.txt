@@ -1,0 +1,239 @@
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Model: TRANSFORMER (Teacher Forcing Mode is irrelevant/automatic)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing TRANSFORMER model...
+Config: Emb=512, Hid=512, Layers=3
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing TRANSFORMER model with Pre-trained Embeddings...
+Starting Training TRANSFORMER...
+Trainable parameters: 46.65M
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 01 | Time: 1m 4s
+	Train Loss: 7.235 | PPL: 1387.127
+	 Val. Loss: 6.680 | PPL: 796.417
+	 Val BLEU: 0.17
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 02 | Time: 1m 6s
+	Train Loss: 5.708 | PPL: 301.243
+	 Val. Loss: 5.971 | PPL: 392.029
+	 Val BLEU: 0.68
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 03 | Time: 1m 4s
+	Train Loss: 4.883 | PPL: 132.060
+	 Val. Loss: 5.401 | PPL: 221.533
+	 Val BLEU: 1.80
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 04 | Time: 1m 6s
+	Train Loss: 4.242 | PPL:  69.559
+	 Val. Loss: 5.076 | PPL: 160.144
+	 Val BLEU: 2.48
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 05 | Time: 1m 0s
+	Train Loss: 3.842 | PPL:  46.624
+	 Val. Loss: 4.924 | PPL: 137.563
+	 Val BLEU: 3.73
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 06 | Time: 1m 3s
+	Train Loss: 3.579 | PPL:  35.848
+	 Val. Loss: 4.812 | PPL: 122.967
+	 Val BLEU: 3.22
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 07 | Time: 1m 0s
+	Train Loss: 3.383 | PPL:  29.458
+	 Val. Loss: 4.764 | PPL: 117.223
+	 Val BLEU: 4.29
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 08 | Time: 1m 0s
+	Train Loss: 3.229 | PPL:  25.265
+	 Val. Loss: 4.752 | PPL: 115.810
+	 Val BLEU: 4.38
+
+special token IDs: {1, 2, 3}
+Epoch: 09 | Time: 0m 59s
+	Train Loss: 3.102 | PPL:  22.241
+	 Val. Loss: 4.753 | PPL: 115.904
+	 Val BLEU: 4.78
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/transformer/absolute/rmsnorm/best_model.pt
+Epoch: 10 | Time: 1m 0s
+	Train Loss: 2.993 | PPL:  19.945
+	 Val. Loss: 4.741 | PPL: 114.519
+	 Val BLEU: 4.74
+
+special token IDs: {1, 2, 3}
+Epoch: 11 | Time: 1m 1s
+	Train Loss: 2.899 | PPL:  18.151
+	 Val. Loss: 4.745 | PPL: 114.951
+	 Val BLEU: 4.39
+
+special token IDs: {1, 2, 3}
+Epoch: 12 | Time: 1m 0s
+	Train Loss: 2.816 | PPL:  16.714
+	 Val. Loss: 4.753 | PPL: 115.975
+	 Val BLEU: 4.61
+
+special token IDs: {1, 2, 3}
+Epoch: 13 | Time: 1m 1s
+	Train Loss: 2.742 | PPL:  15.522
+	 Val. Loss: 4.758 | PPL: 116.521
+	 Val BLEU: 4.18
+
+special token IDs: {1, 2, 3}
+Epoch: 14 | Time: 1m 1s
+	Train Loss: 2.675 | PPL:  14.515
+	 Val. Loss: 4.799 | PPL: 121.402
+	 Val BLEU: 4.40
+
+special token IDs: {1, 2, 3}
+Epoch: 15 | Time: 1m 1s
+	Train Loss: 2.615 | PPL:  13.667
+	 Val. Loss: 4.841 | PPL: 126.580
+	 Val BLEU: 4.42
+
+Loading best model for testing from ckpts/transformer/absolute/rmsnorm/best_model.pt ...
+| Test Loss: 5.416 | Test PPL: 225.001 |
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The record has been documented by the HXXXIC 11 asked whether this activity violates the bill.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: One problem, the commander wrote, wrote, is that it violates the HKMA and was told by the law.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “It sounds a hand in hand, the deputy governor is back to the clock.”
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The White House will define the “America manufacturing” campaign as official activity, so it is not subject to the Habadto’s jurisdiction.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But even official activities are politically mixed.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 4.87
+
+
+
+
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Model: TRANSFORMER (Teacher Forcing Mode is irrelevant/automatic)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing TRANSFORMER model...
+Config: Emb=512, Hid=512, Layers=3
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing TRANSFORMER model with Pre-trained Embeddings...
+Loading best model for testing from ckpts/transformer/absolute/rmsnorm/best_model.pt ...
+| Test Loss: 5.416 | Test PPL: 225.001 |
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The record has been documented by the HXXXIC 11 asked whether this activity violates the bill.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: One problem, the commander wrote, wrote, is that it violates the HKMA and was told by the law.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “It sounds a hand in hand, the deputy governor is back to the clock.”
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The White House will define the “America manufacturing” campaign as official activity, so it is not subject to the Habadto’s jurisdiction.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But even official activities are politically mixed.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 4.87
+Decoding strategy = GREEDY (beam_width=1)
+Total inference time = 16.99s  | Avg time per sentence = 84.93 ms
+
+
+
+
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Model: TRANSFORMER (Teacher Forcing Mode is irrelevant/automatic)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing TRANSFORMER model...
+Config: Emb=512, Hid=512, Layers=3
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing TRANSFORMER model with Pre-trained Embeddings...
+Loading best model for testing from ckpts/transformer/absolute/rmsnorm/best_model.pt ...
+| Test Loss: 5.416 | Test PPL: 225.001 |
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: It has been documented whether the MXXXIC asked whether it violates the bill.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: One problem, the commander wrote, wrote, is whether it violates the HKMA and was told.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “It sounds a hand in hand,” the deputy governor of the deputy governor, put it back.
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The White House is defined as the official activity of the “America manufacture” campaign, so it is not subject to the HKMA.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But even official activities are political.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 4.89
+Decoding strategy = BEAM (beam_width=5)
+Total inference time = 112.81s  | Avg time per sentence = 564.03 ms

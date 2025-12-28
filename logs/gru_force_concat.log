@@ -1,0 +1,266 @@
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Training Mode: TEACHER FORCING (Ratio = 1.0)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing GRU model...
+Config: Emb=512, Hid=512, Layers=2
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing GRU model with Pre-trained Embeddings...
+RNN Settings: Layers=2, Attention=concat
+Starting Training GRU...
+Trainable parameters: 48.59M
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/concat/best_model.pt
+Epoch: 01 | Time: 4m 6s
+	Train Loss: 6.331 | PPL: 561.952
+	 Val. Loss: 8.822 | PPL: 6782.015
+	 Val BLEU: 0.17
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/concat/best_model.pt
+Epoch: 02 | Time: 4m 5s
+	Train Loss: 5.297 | PPL: 199.666
+	 Val. Loss: 8.587 | PPL: 5363.609
+	 Val BLEU: 0.37
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/concat/best_model.pt
+Epoch: 03 | Time: 4m 5s
+	Train Loss: 4.742 | PPL: 114.715
+	 Val. Loss: 8.529 | PPL: 5060.151
+	 Val BLEU: 0.55
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/force/concat/best_model.pt
+Epoch: 04 | Time: 4m 4s
+	Train Loss: 4.414 | PPL:  82.567
+	 Val. Loss: 8.498 | PPL: 4906.860
+	 Val BLEU: 0.55
+
+special token IDs: {1, 2, 3}
+Epoch: 05 | Time: 4m 4s
+	Train Loss: 4.192 | PPL:  66.126
+	 Val. Loss: 8.565 | PPL: 5246.783
+	 Val BLEU: 0.59
+
+special token IDs: {1, 2, 3}
+Epoch: 06 | Time: 4m 4s
+	Train Loss: 4.027 | PPL:  56.087
+	 Val. Loss: 8.565 | PPL: 5243.704
+	 Val BLEU: 0.62
+
+special token IDs: {1, 2, 3}
+Epoch: 07 | Time: 3m 59s
+	Train Loss: 3.895 | PPL:  49.132
+	 Val. Loss: 8.558 | PPL: 5210.017
+	 Val BLEU: 0.73
+
+special token IDs: {1, 2, 3}
+Epoch: 08 | Time: 4m 5s
+	Train Loss: 3.787 | PPL:  44.142
+	 Val. Loss: 8.662 | PPL: 5777.756
+	 Val BLEU: 0.64
+
+special token IDs: {1, 2, 3}
+Epoch: 09 | Time: 4m 5s
+	Train Loss: 3.698 | PPL:  40.354
+	 Val. Loss: 8.659 | PPL: 5764.324
+	 Val BLEU: 0.66
+
+special token IDs: {1, 2, 3}
+Epoch: 10 | Time: 4m 5s
+	Train Loss: 3.622 | PPL:  37.421
+	 Val. Loss: 8.676 | PPL: 5857.926
+	 Val BLEU: 0.75
+
+special token IDs: {1, 2, 3}
+Epoch: 11 | Time: 4m 3s
+	Train Loss: 3.557 | PPL:  35.069
+	 Val. Loss: 8.743 | PPL: 6267.806
+	 Val BLEU: 0.73
+
+special token IDs: {1, 2, 3}
+Epoch: 12 | Time: 4m 4s
+	Train Loss: 3.500 | PPL:  33.106
+	 Val. Loss: 8.755 | PPL: 6345.449
+	 Val BLEU: 0.77
+
+special token IDs: {1, 2, 3}
+Epoch: 13 | Time: 4m 5s
+	Train Loss: 3.451 | PPL:  31.537
+	 Val. Loss: 8.815 | PPL: 6734.288
+	 Val BLEU: 0.73
+
+special token IDs: {1, 2, 3}
+Epoch: 14 | Time: 4m 5s
+	Train Loss: 3.407 | PPL:  30.160
+	 Val. Loss: 8.813 | PPL: 6724.338
+	 Val BLEU: 0.77
+
+special token IDs: {1, 2, 3}
+Epoch: 15 | Time: 4m 4s
+	Train Loss: 3.368 | PPL:  29.033
+	 Val. Loss: 8.810 | PPL: 6702.517
+	 Val BLEU: 0.72
+
+special token IDs: {1, 2, 3}
+Epoch: 16 | Time: 4m 3s
+	Train Loss: 3.334 | PPL:  28.047
+	 Val. Loss: 8.863 | PPL: 7062.537
+	 Val BLEU: 0.81
+
+special token IDs: {1, 2, 3}
+Epoch: 17 | Time: 4m 3s
+	Train Loss: 3.302 | PPL:  27.160
+	 Val. Loss: 8.881 | PPL: 7190.847
+	 Val BLEU: 0.87
+
+special token IDs: {1, 2, 3}
+Epoch: 18 | Time: 4m 4s
+	Train Loss: 3.275 | PPL:  26.434
+	 Val. Loss: 8.909 | PPL: 7394.938
+	 Val BLEU: 1.13
+
+special token IDs: {1, 2, 3}
+Epoch: 19 | Time: 4m 4s
+	Train Loss: 3.248 | PPL:  25.740
+	 Val. Loss: 8.915 | PPL: 7440.915
+	 Val BLEU: 0.76
+
+special token IDs: {1, 2, 3}
+Epoch: 20 | Time: 4m 4s
+	Train Loss: 3.223 | PPL:  25.110
+	 Val. Loss: 8.947 | PPL: 7687.202
+	 Val BLEU: 0.76
+
+Loading best model for testing from ckpts/gru/force/concat/best_model.pt ...
+| Test Loss: 8.951 | Test PPL: 7714.196 |
+Evaluating BLEU with strategy: GREEDY
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The list of the PPFE – the right to the right to the right.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: The “I think of the question,” whether we should be the case of the Constitution’s “No” and the death penalty.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “We have been a lot of the day, and the head of the usual.”
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: Bernanke’s “America US” was the US, which was the case of the US.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But the official official political spectrum.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 1.48
+
+
+
+
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Training Mode: TEACHER FORCING (Ratio = 1.0)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing GRU model...
+Config: Emb=512, Hid=512, Layers=2
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing GRU model with Pre-trained Embeddings...
+RNN Settings: Layers=2, Attention=concat
+Loading best model for testing from ckpts/gru/force/concat/best_model.pt ...
+| Test Loss: 8.951 | Test PPL: 7714.189 |
+Evaluating BLEU with strategy: BEAM
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The list of the SGP’s decision-making.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: The question of “No” is whether it is no excuse for the Constitution, and told that there are no attack.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “We have been a lot of you,” and then.
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The US Federal Reserve’s “America First” in the US, which is the US.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But the official official political spectrum.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 1.26
+Decoding strategy = BEAM (beam_width=5)
+Total inference time = 25.48s  | Avg time per sentence = 127.39 ms
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Training Mode: TEACHER FORCING (Ratio = 1.0)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing GRU model...
+Config: Emb=512, Hid=512, Layers=2
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing GRU model with Pre-trained Embeddings...
+RNN Settings: Layers=2, Attention=concat
+Loading best model for testing from ckpts/gru/force/concat/best_model.pt ...
+| Test Loss: 8.951 | Test PPL: 7714.196 |
+Evaluating BLEU with strategy: BEAM
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The list of the SGP’s decision-making.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: The question of “No” is whether it is no excuse for the Constitution, and told that there are no attack.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “We have been a lot of you,” and then.
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The US Federal Reserve’s “America First” in the US, which is the US.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But the official official political spectrum.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 1.26
+Decoding strategy = BEAM (beam_width=5)
+Total inference time = 26.10s  | Avg time per sentence = 130.49 ms

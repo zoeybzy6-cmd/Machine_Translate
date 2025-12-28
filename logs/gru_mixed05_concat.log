@@ -1,0 +1,335 @@
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Training Mode: MIXED (Ratio = 0.5)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing GRU model...
+Config: Emb=512, Hid=512, Layers=2
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing GRU model with Pre-trained Embeddings...
+RNN Settings: Layers=2, Attention=concat
+Starting Training GRU...
+Trainable parameters: 48.59M
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 01 | Time: 4m 5s
+	Train Loss: 6.917 | PPL: 1009.281
+	 Val. Loss: 7.385 | PPL: 1612.267
+	 Val BLEU: 0.04
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 02 | Time: 4m 4s
+	Train Loss: 6.185 | PPL: 485.623
+	 Val. Loss: 7.133 | PPL: 1252.224
+	 Val BLEU: 0.54
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 03 | Time: 4m 4s
+	Train Loss: 5.769 | PPL: 320.325
+	 Val. Loss: 7.022 | PPL: 1120.734
+	 Val BLEU: 0.49
+
+special token IDs: {1, 2, 3}
+Epoch: 04 | Time: 4m 2s
+	Train Loss: 5.522 | PPL: 250.047
+	 Val. Loss: 7.031 | PPL: 1131.545
+	 Val BLEU: 0.68
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 05 | Time: 4m 3s
+	Train Loss: 5.360 | PPL: 212.785
+	 Val. Loss: 6.987 | PPL: 1082.233
+	 Val BLEU: 0.52
+
+special token IDs: {1, 2, 3}
+Epoch: 06 | Time: 4m 4s
+	Train Loss: 5.235 | PPL: 187.804
+	 Val. Loss: 7.001 | PPL: 1097.581
+	 Val BLEU: 0.46
+
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 07 | Time: 4m 1s
+	Train Loss: 5.135 | PPL: 169.949
+	 Val. Loss: 6.984 | PPL: 1079.048
+	 Val BLEU: 0.59
+
+special token IDs: {1, 2, 3}
+Epoch: 08 | Time: 4m 4s
+	Train Loss: 5.047 | PPL: 155.505
+	 Val. Loss: 7.037 | PPL: 1137.446
+	 Val BLEU: 0.50
+
+special token IDs: {1, 2, 3}
+Epoch: 09 | Time: 4m 2s
+	Train Loss: 4.973 | PPL: 144.430
+	 Val. Loss: 7.084 | PPL: 1193.166
+	 Val BLEU: 0.65
+
+special token IDs: {1, 2, 3}
+Epoch: 10 | Time: 4m 3s
+	Train Loss: 4.907 | PPL: 135.189
+	 Val. Loss: 7.081 | PPL: 1189.719
+	 Val BLEU: 0.66
+
+special token IDs: {1, 2, 3}
+Epoch: 11 | Time: 4m 0s
+	Train Loss: 4.844 | PPL: 126.935
+	 Val. Loss: 7.063 | PPL: 1168.410
+	 Val BLEU: 0.60
+
+special token IDs: {1, 2, 3}
+Epoch: 12 | Time: 4m 2s
+	Train Loss: 4.792 | PPL: 120.493
+	 Val. Loss: 7.132 | PPL: 1251.490
+	 Val BLEU: 0.98
+
+special token IDs: {1, 2, 3}
+Epoch: 13 | Time: 4m 3s
+	Train Loss: 4.745 | PPL: 115.007
+	 Val. Loss: 7.109 | PPL: 1222.338
+	 Val BLEU: 0.70
+
+special token IDs: {1, 2, 3}
+Epoch: 14 | Time: 4m 3s
+	Train Loss: 4.692 | PPL: 109.058
+	 Val. Loss: 7.141 | PPL: 1263.206
+	 Val BLEU: 0.76
+
+special token IDs: {1, 2, 3}
+Epoch: 15 | Time: 4m 5s
+	Train Loss: 4.651 | PPL: 104.736
+	 Val. Loss: 7.156 | PPL: 1282.351
+	 Val BLEU: 0.78
+
+special token IDs: {1, 2, 3}
+Epoch: 16 | Time: 4m 4s
+	Train Loss: 4.610 | PPL: 100.527
+	 Val. Loss: 7.196 | PPL: 1334.041
+	 Val BLEU: 0.99
+
+special token IDs: {1, 2, 3}
+Epoch: 17 | Time: 4m 4s
+	Train Loss: 4.580 | PPL:  97.536
+	 Val. Loss: 7.157 | PPL: 1282.975
+	 Val BLEU: 1.47
+
+special token IDs: {1, 2, 3}
+Epoch: 18 | Time: 4m 4s
+	Train Loss: 4.548 | PPL:  94.475
+	 Val. Loss: 7.191 | PPL: 1327.487
+	 Val BLEU: 0.98
+
+special token IDs: {1, 2, 3}
+Epoch: 19 | Time: 4m 5s
+	Train Loss: 4.510 | PPL:  90.898
+	 Val. Loss: 7.214 | PPL: 1357.892
+	 Val BLEU: 0.90
+
+special token IDs: {1, 2, 3}
+Epoch: 20 | Time: 4m 5s
+	Train Loss: 4.484 | PPL:  88.619
+	 Val. Loss: 7.221 | PPL: 1368.427
+	 Val BLEU: 0.82
+
+Loading best model for testing from ckpts/gru/mixed/concat/best_model.pt ...
+| Test Loss: 7.447 | Test PPL: 1715.125 |
+Evaluating BLEU with strategy: GREEDY
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: It is a PARP1 that the whether it is whether it is.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: The “ of “ “ “No” question whether it is whether whether whether the whether the, the law, the law, and, and, and the law.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “By, you were laid out of the, the roadbbbbbbbbb.
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The US will be “ “ “ “ “ “ activities” activities,,,, the law, the law.
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But even official official political official politics.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 0.42
+/data/250010101/envs/nlp_llm/lib/python3.9/site-packages/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+>>> Training Mode: MIXED (Ratio = 0.5)
+Loading Data (Size: 100k)...
+Initializing SentencePiece processors...
+Creating datasets...
+Dataset sizes - Train: 100000, Valid: 500, Test: 200
+Initializing GRU model...
+Config: Emb=512, Hid=512, Layers=2
+Vocab Sizes: Src(ch)=16000, Trg(en)=16000
+Initializing GRU model with Pre-trained Embeddings...
+RNN Settings: Layers=2, Attention=concat
+Starting Training GRU...
+Trainable parameters: 48.59M
+[Epoch 1] TF Ratio: 1.00
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 01 | Time: 4m 5s
+	Train Loss: 6.331 | PPL: 561.952
+	 Val. Loss: 8.822 | PPL: 6782.015
+	 Val BLEU: 0.17
+
+[Epoch 2] TF Ratio: 1.00
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 02 | Time: 4m 3s
+	Train Loss: 5.297 | PPL: 199.666
+	 Val. Loss: 8.587 | PPL: 5363.609
+	 Val BLEU: 0.37
+
+[Epoch 3] TF Ratio: 1.00
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 03 | Time: 4m 3s
+	Train Loss: 4.742 | PPL: 114.715
+	 Val. Loss: 8.529 | PPL: 5060.151
+	 Val BLEU: 0.55
+
+[Epoch 4] TF Ratio: 1.00
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 04 | Time: 4m 3s
+	Train Loss: 4.414 | PPL:  82.567
+	 Val. Loss: 8.498 | PPL: 4906.860
+	 Val BLEU: 0.55
+
+[Epoch 5] TF Ratio: 1.00
+special token IDs: {1, 2, 3}
+Epoch: 05 | Time: 4m 3s
+	Train Loss: 4.192 | PPL:  66.126
+	 Val. Loss: 8.565 | PPL: 5246.783
+	 Val BLEU: 0.59
+
+[Epoch 6] TF Ratio: 1.00
+special token IDs: {1, 2, 3}
+Epoch: 06 | Time: 4m 4s
+	Train Loss: 4.027 | PPL:  56.087
+	 Val. Loss: 8.565 | PPL: 5243.704
+	 Val BLEU: 0.62
+
+[Epoch 7] TF Ratio: 0.90
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 07 | Time: 4m 1s
+	Train Loss: 4.125 | PPL:  61.888
+	 Val. Loss: 7.978 | PPL: 2916.973
+	 Val BLEU: 1.60
+
+[Epoch 8] TF Ratio: 0.80
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 08 | Time: 4m 4s
+	Train Loss: 4.238 | PPL:  69.239
+	 Val. Loss: 7.764 | PPL: 2354.317
+	 Val BLEU: 1.06
+
+[Epoch 9] TF Ratio: 0.70
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 09 | Time: 4m 1s
+	Train Loss: 4.358 | PPL:  78.073
+	 Val. Loss: 7.487 | PPL: 1784.697
+	 Val BLEU: 1.49
+
+[Epoch 10] TF Ratio: 0.60
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 10 | Time: 4m 3s
+	Train Loss: 4.491 | PPL:  89.212
+	 Val. Loss: 7.310 | PPL: 1495.041
+	 Val BLEU: 1.18
+
+[Epoch 11] TF Ratio: 0.50
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 11 | Time: 4m 0s
+	Train Loss: 4.629 | PPL: 102.431
+	 Val. Loss: 7.208 | PPL: 1350.492
+	 Val BLEU: 1.39
+
+[Epoch 12] TF Ratio: 0.40
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 12 | Time: 4m 1s
+	Train Loss: 4.785 | PPL: 119.695
+	 Val. Loss: 7.096 | PPL: 1207.432
+	 Val BLEU: 1.03
+
+[Epoch 13] TF Ratio: 0.30
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 13 | Time: 4m 2s
+	Train Loss: 4.933 | PPL: 138.739
+	 Val. Loss: 6.958 | PPL: 1051.613
+	 Val BLEU: 1.17
+
+[Epoch 14] TF Ratio: 0.20
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 14 | Time: 4m 4s
+	Train Loss: 5.074 | PPL: 159.862
+	 Val. Loss: 6.905 | PPL: 997.690
+	 Val BLEU: 1.02
+
+[Epoch 15] TF Ratio: 0.10
+special token IDs: {1, 2, 3}
+--> Best model saved to ckpts/gru/mixed/concat/best_model.pt
+Epoch: 15 | Time: 4m 1s
+	Train Loss: 5.186 | PPL: 178.727
+	 Val. Loss: 6.853 | PPL: 946.417
+	 Val BLEU: 0.88
+
+Loading best model for testing from ckpts/gru/mixed/concat/best_model.pt ...
+| Test Loss: 7.445 | Test PPL: 1711.874 |
+Evaluating BLEU with strategy: GREEDY
+Calculating BLEU on 200 samples...
+
+--- Sample 0 ---
+SRC: 记录指出 HMX-1 曾询问此次活动是否违反了该法案。
+REF: Records indicate that HMX-1 inquired about whether the event might violate the provision.
+HYP: The the point that the OMH the the whether the charges whether charges the charges.
+
+--- Sample 1 ---
+SRC: 该指挥官写道“我们问的一个问题是这是否违反了《哈奇法案》，并被告知没有违反。”
+REF: "One question we asked was if it was a violation of the Hatch Act and were informed it was not," the commander wrote.
+HYP: The “ that “ “ “ “ whether whether whether whether the whether theBBBBB,,” and,,.
+
+--- Sample 2 ---
+SRC: “听起来你被锁住了啊，”副司令回复道。
+REF: "Sounds like you are locked," the Deputy Commandant replied.
+HYP: “ you you you repeated,,,, the,
+
+--- Sample 3 ---
+SRC: 白宫将此次“美国制造”活动定义为官方活动，因此不受《哈奇法案》管辖。
+REF: The "Made in America" event was designated an official event by the White House, and would not have been covered by the Hatch Act.
+HYP: The US US “ “ “ US manufacturing activities” as official activity, the the the the the the..
+
+--- Sample 4 ---
+SRC: 但是即使是官方活动也带有政治色彩。
+REF: But even official events have political overtones.
+HYP: But official official statistics official statistics.
+Processed 100 sentences
+Processed 200 sentences
+BLEU score = 0.34
