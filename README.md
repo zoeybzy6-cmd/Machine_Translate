@@ -106,7 +106,7 @@ We provide runnable shell scripts under `scripts/` to reproduce training and inf
 
 Before running scripts, make sure you are in the project root directory.
 
-Our pretrained checkpoint weights are provided via the link.
+Our pretrained checkpoint weights are provided via the [link](https://drive.google.com/drive/folders/1vbxMiyksoxrdOPQCUKaglovyK-l5yOV-?usp=drive_link).
 
 ### 1) Train GRU Seq2Seq + Attention
 
